@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+
+html,
+body {
+  background: #469488;
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+.logo-image {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* .button-home{
+} */
+
+
+
+.wrap {
+  display: flex;
+  justify: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  
+}
+
+.box {
+  display: flex;
+  width: 40% !important;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 10px;
+  border-radius: 50px;
+  background: #ffdb66;
+  box-shadow: 0 8px 16px 3px rgba(24, 24, 24, 0.4);
+}
+
+/* trending-graph */
+.trending-graph {
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px 3px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 25px;
+  border-radius: 5px;
+}
+
+/* Weekly Cards Style */
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 400ms transform, 400ms box-shadow, 400ms background-color;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 0.7em;
+}
+
+.weekly-trend-card {
+  background-color: #24695e;
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.button-container button {
+  margin: 5px;
+}
+
+
+.remaining-div {
+  margin-top: 40px;
+  /* margin: 30px 10px 50px 30px; */
+  background-color: white;
+  max-width: 87%;
+  border-radius: 10px;
+}
+
+.remaining-card-list {
+  width: 100%;
+}
+
+.card-item-remaining {
+  max-width: 600px;
+}
+
+.card-container {
+  max-width: 2057px;
+}
+
+.remaining-card-list {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 80px;
+}
+
+.card-item-remaining {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+
+}
+
+.remaining-arrow {
+  color: #215f54;
+  font-size: 30px;
+}
+
+
+
+/* END Style */
+
+/* MEDIA QUERY */
+@media (max-width: 1200px) {
+  .card {
+    width: 600px;
+  }
+
+  .card .additional {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+  }
+
+  .card .general {
+    width: 400px;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .btn1 {
+    font-size: 12;
+    padding: 0.425rem 0.6rem;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 668px) {
+  .card {
+    width: 420px;
+  }
+
+  .card .additional {
+    position: absolute;
+    width: 170px;
+    height: 100%;
+  }
+
+  .card .general {
+    width: 250px;
+    height: 100%;
+    padding: 0.5rem;
+  }
+
+  .btn1 {
+    font-size: 12;
+    padding: 0.425rem 0.6rem;
+    margin: 5px;
+    display: flex;
+    text-align: center;
+  }
+
+  .card .additional .user-card {
+    width: 180px;
+    /* float: left; */
+  }
+
+  .card .general .more {
+    font-family: "featura";
+    border-radius: 20px;
+    padding: 5px 60px;
+    width: 200px;
+  }
+
+  .remaining-card-list {
+    display: grid;
+    padding: 10px;
+  }
+
+  .header-container {
+    margin-top: 25px;
+    height: 70px !important;
+    display: flex;
+    width: min(95%, 100%);
+  }
+
+  .br1,
+  .br2,
+  .br3 {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .card {
+    width: 250px;
+  }
+
+  .header-container {
+    margin-top: 25px;
+    height: 70px !important;
+    display: flex;
+    width: min(95%, 100%);
+  }
+}
+
+/* Dashboard media Query */
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+}

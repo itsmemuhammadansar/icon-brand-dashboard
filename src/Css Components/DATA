@@ -1,0 +1,26 @@
+const demoData = [
+    {
+      level: 1,
+      points: '5,312 Points',
+      groupName: 'OMGA',
+      countUnit: 'Demo Count Unit 1',
+      lastDay: 'Demo Last Day 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar.',
+    },
+    {
+      level: 3,
+      points: '2,765 Points',
+      groupName: 'ALPHA',
+      countUnit: 'Demo Count Unit 3',
+      lastDay: 'Demo Last Day 3',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar.',
+    },
+    {
+      level: 2,
+      points: '3,456 Points',
+      groupName: 'SIGMA',
+      countUnit: 'Demo Count Unit 2',
+      lastDay: 'Demo Last Day 2',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar.',
+    },
+  ];

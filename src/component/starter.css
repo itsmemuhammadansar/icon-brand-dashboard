@@ -1,0 +1,68 @@
+.background {
+  font-family: "Exo", sans-serif;
+  background: linear-gradient(-45deg, #f1692ec2, #7d3f96bd, #fedd06cd, #14b5af);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.block {
+  position: absolute;
+  height: 40px;
+  width: 50px;
+  background: #0d6567;
+  -webkit-box-shadow: 10px 10px 50px rgba(170, 200, 52, 0.2);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.starter-btn {
+  text-align: center;
+  font-size: 10vw;
+  z-index: 999;
+  font-weight: 700;
+  line-height: 0.6em;
+}
+
+.icon-club{
+  padding: 124px 45px 124px 44px;
+  font-size: 42px;
+  border-radius: 159px;
+  font-family: cursive;
+  background-color: #14b5af;
+  border:none;
+}
