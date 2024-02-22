@@ -9,7 +9,7 @@ export default function Dashboard() {
   const [weeklyVen10TrendArray, setWeeklyVen10TrendArray] = useState([]);
   const [weeklyVen20TrendArray, setWeeklyVen20TrendArray] = useState([]);
   const [weeklyTrendArray, setWeeklyTrendArray] = useState([]);
-  const [selectedButton, setSelectedButton] = useState("all");
+  // const [selectedButton, setSelectedButton] = useState("all");
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -67,9 +67,6 @@ export default function Dashboard() {
       markers: {
         size: 1,
       },
-      // xaxis: {
-      //   categories: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      // },
       xaxis: {
         categories: ["Week1", "Week2", "Week3", "Week4"],
       },
@@ -129,17 +126,14 @@ export default function Dashboard() {
       series: [
         {
           name: "Icon",
-          data:
-            selectedButton === "all" || selectedButton === "venuBrand"
-              ? weeklyTrendArray
-              : [],
+          
         },
         
       ],
     };
 
     setChartData(updatedChartData);
-  }, [selectedButton, weeklyTrendArray, weeklyVen10TrendArray, weeklyVen20TrendArray,]);
+  }, [ weeklyTrendArray, weeklyVen10TrendArray, weeklyVen20TrendArray,]);
 
   return (
     <div>
